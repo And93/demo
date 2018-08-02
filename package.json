@@ -1,0 +1,22 @@
+{
+  "name": "task5",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "wdio"
+  },
+  "engines": {
+    "node": ">=8.9.1",
+    "npm": ">=5.7.1"
+  },
+  "author": "Andrei Dzeichyk",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "5.1.1",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-sync": "0.7.1",
+    "webdriverio": "4.12.0"
+  }
+}
