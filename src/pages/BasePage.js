@@ -8,9 +8,8 @@ class BasePage extends BaseBlock {
             () => this.browser.getUrl() === url,
             10000,
             `The url of current page is: ${getUrl()}, but must be: ${url}`
-        )
+        );
     }
-
 }
 
 module.exports = BasePage;

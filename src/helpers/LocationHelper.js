@@ -19,8 +19,8 @@ class LocationHelper extends BaseBlock {
     };
 
     setValue(country, city) {
-        const _country = (typeof country ==='string') ? `="${country}"` : ''
-        const _city = (typeof city ==='string') ? city : `All Cities in ${country}`
+        const _country = (typeof country ==='string') ? `="${country}"` : '';
+        const _city = (typeof city ==='string') ? city : `All Cities in ${country}`;
 
         this.locationInput.click();
         this.dropDownMenu.waitForVisible();

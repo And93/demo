@@ -1,5 +1,5 @@
 const BaseBlock = require('./BaseBlock');
-const LocationHelper = require('../helpers/LocationHelper')
+const LocationHelper = require('../helpers/LocationHelper');
 
 class SearchJobBlock extends BaseBlock {
 

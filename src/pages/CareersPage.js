@@ -26,7 +26,7 @@ class CareersPage extends BasePage {
 
     assertHeader(header) {
         const getText = () => this.headerString.getText();
-        const regExp = new RegExp(`WE FOUND [0-9]+ JOB OPENINGS${' ' + header}`)
+        const regExp = new RegExp(`WE FOUND [0-9]+ JOB OPENINGS${' ' + header}`);
         this.browser.waitUntil(
             () => getText().search(regExp) !== -1,
             10000,
@@ -34,18 +34,18 @@ class CareersPage extends BasePage {
         );
     }
 
-    assertListOfSearch(pisition) {
+    assertListOfSearch(position) {
         const getText = () => this.itemOfSearchList.getText();
         this.browser.waitUntil(
-            () => getText().includes(pisition) === true,
+            () => getText().includes(position) === true,
             10000,
-            `Text in search result is: ${getText()}, but must be: ${pisition}`
+            `Text in search result is: ${getText()}, but must be: ${position}`
         );
     }
 
     assertCoutnryInSearchList(country) {
         const getText = () => this.cityAndCountryString.getText();
-        const regExp = new RegExp(`[A-Z]+, ${country}`)
+        const regExp = new RegExp(`[A-Z]+, ${country}`);
         this.browser.waitUntil(
             () => getText().search(regExp) !== -1,
             10000,
